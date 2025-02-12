@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Web Development 🚀</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function showCategory(category) {
+            document.querySelectorAll('.category-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(category).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 to-blue-500 text-white font-sans">
+    <nav class="bg-white shadow-md p-4 text-gray-900 flex justify-center space-x-6">
+        <button onclick="showCategory('react')" class="hover:text-blue-600 font-semibold">React.js</button>
+        <button onclick="showCategory('node')" class="hover:text-blue-600 font-semibold">Node.js</button>
+        <button onclick="showCategory('express')" class="hover:text-blue-600 font-semibold">Express.js</button>        
+        <button onclick="showCategory('MongoDB')" class="hover:text-blue-600 font-semibold">MongoDB</button>
+        <!-- <button onclick="showCategory('express')" class="hover:text-blue-600 font-semibold">Express.js</button> -->
+    </nav>
+    
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-4xl font-extrabold mb-6 text-center drop-shadow-lg">Mastering Web Development 🚀</h1>
+        
+        <div id="react" class="category-section">
+            <h2 class="text-2xl font-bold mt-6 text-center">React.js</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Fundamentals of React</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>JSX (JavaScript XML)</li>
+                        <li>Components (Functional & Class)</li>
+                        <li>Props and State</li>
+                        <li>Event Handling</li>
+                        <li>Conditional Rendering</li>
+                        <li>Lists and Keys</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">React Hooks</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>useState (State Management)</li>
+                        <li>useEffect (Side Effects & Lifecycle)</li>
+                        <li>useContext (Global State with Context API)</li>
+                        <li>useReducer (Alternative to useState for complex state logic)</li>
+                        <li>useRef (DOM Manipulation & Persisting Values)</li>
+                        <li>useMemo & useCallback (Performance Optimization)</li>
+                    </ul>
+                </div>
+
+
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Component Lifecycle & Rendering</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Understanding Component Lifecycle (Mounting, Updating, Unmounting)</li>
+                        <li>React Fiber & Reconciliation</li>
+                        <li>Avoiding Unnecessary Re-renders (React.memo, useMemo, useCallback)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">State Management in React</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Local State (useState)</li>
+                        <li>Global State (Context API, Redux, Zustand, Recoil)</li>
+                        <li>Server State (React Query, SWR)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">React Router (Navigation in React Apps)</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Basic Routing (&lt;BrowserRouter&gt;, &lt;Route&gt;, &lt;Link&gt;)</li>
+                        <li>Dynamic Routing (useParams)</li>
+                        <li>Protected Routes & Authentication Handling</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">API Handling & Async Operations</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Fetching Data (fetch, axios)</li>
+                        <li>Handling Side Effects (useEffect, React Query)</li>
+                        <li>Debouncing & Throttling API Requests</li>
+                        <li>Caching & Optimizing API Calls</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Performance Optimization</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Virtual DOM & Reconciliation</li>
+                        <li>Code Splitting (React.lazy, Suspense)</li>
+                        <li>Memoization (React.memo, useMemo, useCallback)</li>
+                        <li>Lazy Loading & Bundle Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Forms & Input Handling</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">React and TypeScript (Optional but Recommended)</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Defining Props & State with Types</li>
+                        <li>Using Type Interfaces with Hooks</li>
+                        <li>Type Safety for API Responses</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Testing in React</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Unit Testing with Jest</li>
+                        <li>Component Testing with React Testing Library</li>
+                        <li>End-to-End (E2E) Testing with Cypress</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Advanced Topics</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Server-Side Rendering (SSR) & Static Site Generation (SSG) (Next.js)</li>
+                        <li>Progressive Web Apps (PWAs) in React</li>
+                        <li>WebSockets & Real-time Communication (Socket.io)</li>
+                        <li>Custom React Hooks</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="node" class="category-section hidden">
+            <h2 class="text-2xl font-bold mt-6 text-center">Node.js</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Node.js Basics</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>What is Node.js?</li>
+                        <li>Event Loop</li>
+                        <li>Modules and NPM</li>
+                        <li>File System Operations</li>
+                        <li>Asynchronous Programming</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Node.js Advanced</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Streams & Buffers</li>
+                        <li>Child Processes</li>
+                        <li>Clustering</li>
+                        <li>Error Handling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="express" class="category-section hidden">
+            <h2 class="text-2xl font-bold mt-6 text-center">Express.js</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Express.js Fundamentals</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Setting Up Express</li>
+                        <li>Middleware</li>
+                        <li>Routing</li>
+                        <li>Request & Response Handling</li>
+                        <li>Error Handling</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Express.js Advanced</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Authentication & JWT</li>
+                        <li>Database Integration</li>
+                        <li>Performance Optimization</li>
+                        <li>Security Best Practices</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Authentication & Security</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>User Authentication (JWT, Passport.js)</li>
+                        <li>Session & Cookie Management</li>
+                        <li>Security Best Practices (Helmet, CORS, Rate Limiting)</li>
+                        <li>Password Hashing (bcrypt)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Database Integration</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Connecting Express with Databases (MongoDB, MySQL, PostgreSQL)</li>
+                        <li>ORM & ODM (Mongoose, Sequelize)</li>
+                        <li>CRUD Operations with Databases</li>
+                        <li>Data Validation & Sanitization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Real-time Applications</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>WebSockets with Socket.io</li>
+                        <li>Server-Sent Events (SSE)</li>
+                        <li>Real-time Chat & Notifications</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Performance Optimization</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Request Caching (Redis, In-memory caching)</li>
+                        <li>Load Balancing & Clustering</li>
+                        <li>Compression & Minification</li>
+                        <li>Using Reverse Proxy (Nginx)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Testing & Deployment</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Unit & Integration Testing (Jest, Mocha, Chai, Supertest)</li>
+                        <li>CI/CD Pipeline Setup</li>
+                        <li>Deploying on Cloud Platforms (AWS, Heroku, Vercel)</li>
+                        <li>Monitoring & Logging (PM2, Winston, Morgan)</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="MongoDB" class="category-section hidden">
+            <h2 class="text-2xl font-bold mt-6 text-center">MongoDB</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">MongoDB Fundamentals</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>What is MongoDB? (NoSQL vs SQL)</li>
+                        <li>Installing & Setting Up MongoDB</li>
+                        <li>Understanding BSON & JSON Structure</li>
+                        <li>Databases, Collections, and Documents</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">CRUD Operations</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Creating Documents (insertOne, insertMany)</li>
+                        <li>Reading Documents (find, findOne)</li>
+                        <li>Updating Documents (updateOne, updateMany, $set, $inc)</li>
+                        <li>Deleting Documents (deleteOne, deleteMany)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Schema Design & Data Modeling</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Embedding vs Referencing</li>
+                        <li>One-to-One, One-to-Many, Many-to-Many Relationships</li>
+                        <li>Indexing for Performance Optimization</li>
+                        <li>Best Practices for Scalable Database Design</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Aggregation Framework</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Understanding Aggregation Pipelines</li>
+                        <li>$match, $group, $sort, $project, $lookup</li>
+                        <li>Data Transformation & Computation</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Indexes & Performance Optimization</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Creating Indexes (createIndex)</li>
+                        <li>Types of Indexes (Single Field, Compound, Text, Geospatial)</li>
+                        <li>Query Optimization with Indexes</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Transactions & Concurrency</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>ACID Transactions in MongoDB</li>
+                        <li>Multi-Document Transactions</li>
+                        <li>Optimistic vs Pessimistic Locking</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Security & Authentication</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>User Roles & Authentication (createUser, grantRoles)</li>
+                        <li>Role-Based Access Control (RBAC)</li>
+                        <li>Data Encryption & Security Best Practices</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Replication & High Availability</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Setting Up Replica Sets</li>
+                        <li>Automatic Failover & Data Redundancy</li>
+                        <li>Read & Write Concerns</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">Sharding & Scalability</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Horizontal Scaling with Sharding</li>
+                        <li>Choosing the Right Shard Key</li>
+                        <li>Managing Large Data Sets</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-5 rounded-lg shadow-lg text-gray-900">
+                    <h3 class="text-xl font-semibold">MongoDB with Node.js</h3>
+                    <ul class="list-disc pl-4 text-gray-700">
+                        <li>Connecting MongoDB with Mongoose ODM</li>
+                        <li>CRUD Operations using Mongoose</li>
+                        <li>Schema & Model Validation</li>
+                        <li>Handling Connections & Errors</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
