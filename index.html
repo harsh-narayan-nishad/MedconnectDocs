@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mastering Web Development 🚀</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
         function showCategory(category) {
             document.querySelectorAll('.category-section').forEach(section => {
@@ -20,13 +21,17 @@
         <button onclick="showCategory('node')" class="hover:text-blue-600 font-semibold">Node.js</button>
         <button onclick="showCategory('express')" class="hover:text-blue-600 font-semibold">Express.js</button>        
         <button onclick="showCategory('MongoDB')" class="hover:text-blue-600 font-semibold">MongoDB</button>
+        <button onclick="showCategory('Interview')" class="hover:text-blue-600 font-semibold">Interview</button>
         <!-- <button onclick="showCategory('express')" class="hover:text-blue-600 font-semibold">Express.js</button> -->
     </nav>
     
+    
+
     <div class="max-w-4xl mx-auto p-6">
         <h1 class="text-4xl font-extrabold mb-6 text-center drop-shadow-lg">Mastering Web Development 🚀</h1>
         
         <div id="react" class="category-section">
+
             <h2 class="text-2xl font-bold mt-6 text-center">React.js</h2>
             <div class="space-y-4">
                 <div class="bg-white/10 backdrop-blur-md shadow-md/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
@@ -334,6 +339,165 @@
                         <li>CRUD Operations using Mongoose</li>
                         <li>Schema & Model Validation</li>
                         <li>Handling Connections & Errors</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="Interview" class="category-section hidden">
+
+            <h2 class="text-2xl font-bold mt-6 text-center">Interview</h2>
+            <div class="space-y-4">
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Basic Routing (&lt;BrowserRouter&gt;, &lt;Route&gt;, &lt;Link&gt;)</li>
+                        <li>Dynamic Routing (useParams) <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Protected Routes & Authentication Handling</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md shadow-md/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">React</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>JSX (JavaScript XML) <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Components (Functional & Class) <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Props and State <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Event Handling <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Conditional Rendering <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                        <li>Lists and Keys <a href="https://www.google.com" class="text-blue-500" target="_blank"><i class="fa-solid fa-arrow-right-from-bracket "></i></a></li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Node</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>useState (State Management)</li>
+                        <li>useEffect (Side Effects & Lifecycle)</li>
+                        <li>useContext (Global State with Context API)</li>
+                        <li>useReducer (Alternative to useState for complex state logic)</li>
+                        <li>useRef (DOM Manipulation & Persisting Values)</li>
+                        <li>useMemo & useCallback (Performance Optimization)</li>
+                    </ul>
+                </div>
+
+
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Expess Js</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Understanding Component Lifecycle (Mounting, Updating, Unmounting)</li>
+                        <li>React Fiber & Reconciliation</li>
+                        <li>Avoiding Unnecessary Re-renders (React.memo, useMemo, useCallback)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">MongoDB</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Local State (useState)</li>
+                        <li>Global State (Context API, Redux, Zustand, Recoil)</li>
+                        <li>Server State (React Query, SWR)</li>
+                    </ul>
+                </div>
+                
+                
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Python</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Fetching Data (fetch, axios)</li>
+                        <li>Handling Side Effects (useEffect, React Query)</li>
+                        <li>Debouncing & Throttling API Requests</li>
+                        <li>Caching & Optimizing API Calls</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">C/C++</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Virtual DOM & Reconciliation</li>
+                        <li>Code Splitting (React.lazy, Suspense)</li>
+                        <li>Memoization (React.memo, useMemo, useCallback)</li>
+                        <li>Lazy Loading & Bundle Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Computer Networks</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Operating System</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">DBMS</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">OOPs</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">System Design</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Controlled vs Uncontrolled Components</li>
+                        <li>Handling Form Submissions</li>
+                        <li>Form Validation (Formik, Yup, react-hook-form)</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Data Structures</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Defining Props & State with Types</li>
+                        <li>Using Type Interfaces with Hooks</li>
+                        <li>Type Safety for API Responses</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Maths</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Unit Testing with Jest</li>
+                        <li>Component Testing with React Testing Library</li>
+                        <li>End-to-End (E2E) Testing with Cypress</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">Puzzals</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Server-Side Rendering (SSR) & Static Site Generation (SSG) (Next.js)</li>
+                        <li>Progressive Web Apps (PWAs) in React</li>
+                        <li>WebSockets & Real-time Communication (Socket.io)</li>
+                        <li>Custom React Hooks</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md shadow-md p-5 rounded-lg shadow-lg text-gray-200">
+                    <h3 class="text-xl font-semibold">SQL</h3>
+                    <ul class="list-disc pl-4 text-gray-400">
+                        <li>Server-Side Rendering (SSR) & Static Site Generation (SSG) (Next.js)</li>
+                        <li>Progressive Web Apps (PWAs) in React</li>
+                        <li>WebSockets & Real-time Communication (Socket.io)</li>
+                        <li>Custom React Hooks</li>
                     </ul>
                 </div>
                 
